@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Centered Text</title>
+    <title>Daniel Steinmann</title>
     <style>
       body {
         margin: 0;
@@ -28,23 +28,49 @@
         font-family: "Courier New", Courier, monospace;
         font-weight: normal;
       }
+
+      /* Media query for mobile devices */
+      @media only screen and (max-width: 600px) {
+        .centered-text {
+          width: 100%; /* Make the content fill the width of the screen */
+        }
+      }
+
     </style>
   </head>
   <body>
     <div class="centered-text">
       <p>-----------------------------------------</p>
+      <p>-----------------------------------------</p>
       <p>--Daniel Steinmann-----------------------</p>
       <p>-----------------------------------------</p>
       <p>-----------------------------------------</p>
-      <p></p>
-      <h1>∗ Projects ∗</h1>
+      <h1>∗∗ Platform Engineering ∗∗</h1>
+      <p></p><a href="https://maisondu.software/">Maison du Software</a></p>
+      <h1>∗∗ Teaching ∗∗</h1>
+      <p></p><a href="https://fh-hwz.ch/">Hochschule für Wirtschaft Zürich</a></p>
+      <h1>∗∗ Web Design ∗∗</h1>
       <p></p><a href="https://www.zos-orchester.ch">zos-orchester.ch</a></p>
       <p></p><a href="https://www.schoblochundseitz.ch">schoblochundseitz.ch</a></p>
-      <h1>∗ Contact ∗</h1>
-      <p></p><a href="mailto:daniel.steinmann@protonmail.com">daniel.steinmann@protonmail.com</a></p>
+      <h1>∗∗ Contact ∗∗</h1>
+      <p></p><a href="mailto:daniel.steinmann@protonmail.com">Email</a></p>
+      <p></p><a href="https://www.linkedin.com/in/daniel-steinmann-634629179/">LinkedIn</a></p>
+      <p></p><a href="https://github.com/daniel-steinmann">GitHub</a></p>
       <p>-----------------------------------------</p>
       <p>-----------------------------------------</p>
+      <p>----------------------------Zurich,<a id="datetime"></a>--</p>
       <p>-----------------------------------------</p>
+      
     </div>
+    
   </body>
 </html>
+
+<script>
+  // Get current date and time
+  var now = new Date();
+  var datetime = now.getFullYear();
+
+  // Insert date and time into HTML
+  document.getElementById("datetime").innerHTML = datetime;
+</script>
