@@ -5,13 +5,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iframe Detection</title>
     <script>
-        if (window.self === window.top) {
-            // The page is not in a frame
-            window.location.href = 'https://www.daniel-steinmann.ch';
-        }
-    </script>
+      if (window.self === window.top && window.location.href !== 'https://www.daniel-steinmann.ch') {
+          // Redirect only if the current URL is different
+          window.location.href = 'https://www.daniel-steinmann.ch';
+      }
+  </script>
     <title>Daniel Steinmann</title>
     <style>
       body {
