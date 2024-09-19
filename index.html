@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="canonical" href="https://www.daniel-steinmann.ch"/>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iframe Detection</title>
+    <script>
+        if (window.self === window.top) {
+            // The page is not in a frame
+            window.location.href = 'https://www.daniel-steinmann.ch';
+        }
+    </script>
     <title>Daniel Steinmann</title>
     <style>
       body {
@@ -56,7 +64,7 @@
       <p></p><a href="https://www.schoblochundseitz.ch">schoblochundseitz.ch</a></p>
       <h1>∗∗ Contact ∗∗</h1>
       <p></p><a href="mailto:%64%61%6E%69%65%6C%2E%73%74%65%69%6E%6D%61%6E%6E%40%67%6D%61%69%6C%2E%63%6F%6D">Email</a></p>
-      <p></p><a href="https://github.com/daniel-steinmann">GitHub</a></p>
+      <p></p><a href="https://github.com/RGFuaWVs">GitHub</a></p>
       <h1>∗∗ Cool Links ∗∗</h1>
       <p></p><a href="https://grugbrain.dev">grugbrain.dev</a></p>
       <p>-----------------------------------------</p>
