@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="canonical" href="https://www.daniel-steinmann.ch"/>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="canonical" href="https://www.daniel-steinmann.ch" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal website of Daniel Steinmann, Software Engineer in Zurich, Switzerland."
+    />
     <title>Daniel Steinmann</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Daniel Steinmann",
+        "url": "https://www.daniel-steinmann.ch/"
+      }
+    </script>
     <style>
       body {
         margin: 0;
@@ -38,7 +50,6 @@
           width: 100%; /* Make the content fill the width of the screen */
         }
       }
-
     </style>
   </head>
   <body>
@@ -49,32 +60,39 @@
       <p>-----------------------------------------</p>
       <p>-----------------------------------------</p>
       <h1>∗∗ Platform Engineering ∗∗</h1>
-      <p></p><a href="https://maisondu.software/">Maison du Software</a></p>
+      <p></p>
+      <a href="https://maisondu.software/">Maison du Software</a>
       <h1>∗∗ Teaching ∗∗</h1>
-      <p></p><a href="https://fh-hwz.ch/">Hochschule für Wirtschaft Zürich</a></p>
-      <h1>∗∗ Web Design ∗∗</h1>
-      <p></p><a href="https://www.zos-orchester.ch">zos-orchester.ch</a></p>
-      <p></p><a href="https://www.schoblochundseitz.ch">schoblochundseitz.ch</a></p>
+      <p></p>
+      <a href="https://fh-hwz.ch/">Hochschule für Wirtschaft Zürich</a>
+      <h1>∗∗ Web ∗∗</h1>
+      <p></p>
+      <a href="https://www.zos-orchester.ch">zos-orchester.ch</a>
+      <p></p>
+      <a href="https://www.schoblochundseitz.ch">schoblochundseitz.ch</a>
       <h1>∗∗ Contact ∗∗</h1>
-      <p></p><a href="mailto:%64%61%6E%69%65%6C%2E%73%74%65%69%6E%6D%61%6E%6E%40%67%6D%61%69%6C%2E%63%6F%6D">Email</a></p>
-      <p></p><a href="https://github.com/RGFuaWVs">GitHub</a></p>
+      <p></p>
+      <a
+        href="mailto:%64%61%6E%69%65%6C%2E%73%74%65%69%6E%6D%61%6E%6E%40%67%6D%61%69%6C%2E%63%6F%6D"
+        >Email</a
+      >
+      <p></p>
+      <a href="https://github.com/RGFuaWVs">GitHub</a>
       <h1>∗∗ Cool Links ∗∗</h1>
-      <p></p><a href="https://grugbrain.dev">grugbrain.dev</a></p>
+      <p></p>
+      <a href="https://grugbrain.dev">grugbrain.dev</a>
       <p>-----------------------------------------</p>
       <p>-----------------------------------------</p>
       <p>----------------------------Zurich,<a id="datetime"></a>--</p>
       <p>-----------------------------------------</p>
-      
     </div>
-    
   </body>
+  <script>
+    // Get current date and time
+    var now = new Date();
+    var datetime = now.getFullYear();
+
+    // Insert date and time into HTML
+    document.getElementById("datetime").innerHTML = datetime;
+  </script>
 </html>
-
-<script>
-  // Get current date and time
-  var now = new Date();
-  var datetime = now.getFullYear();
-
-  // Insert date and time into HTML
-  document.getElementById("datetime").innerHTML = datetime;
-</script>
